@@ -1,0 +1,16 @@
+istring
+=======
+
+Add citext datatype support for ActiveRecord.
+
+
+Example
+=======
+
+create_table :leagues do |t|
+  t.string :name, :null => false
+  t.istring :url, :null => false  # 'istring' will create a 'citext' column
+end
+
+
+Copyright (c) 2010 Rit Li, released under the MIT license
